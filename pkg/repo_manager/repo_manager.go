@@ -18,7 +18,7 @@ func NewRepoManager(baseDir string, repoNames []string, ignoreErrors bool) (repo
 	_, err = os.Stat(baseDir)
 	if err != nil {
 		if os.IsNotExist(err) {
-			err = errors.New(fmt.Sprintf("base dir: '%s' dosen't exist", baseDir))
+			err = errors.New(fmt.Sprintf("base dir: '%s' doesn't exist", baseDir))
 
 		}
 		return 
